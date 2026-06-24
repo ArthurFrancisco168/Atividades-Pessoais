@@ -23,7 +23,10 @@ else:
 # QUESTÃO 5
 frase = input("Frase: ")
 indices = []
+qnt = 0
 for i, letra in enumerate(frase):
     if letra in "AEIOUaeiou":
         indices.append(i)
+        qnt += 1
 print(f"Índices: {", ".join(indices)}")
+print("Total:",qnt)

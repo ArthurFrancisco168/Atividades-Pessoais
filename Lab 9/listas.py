@@ -52,3 +52,16 @@ print(lista_2)
 print(lista_intersecao)
 
 # QUESTÃO 6
+import random
+lista = [random.randint(0,100) for x in range(20)]
+tamanho = int(input("Tamanho para divisão: "))
+lista_principal =[]
+for i in range(0,len(lista),tamanho):
+    lista_principal.append(lista[i:i+tamanho])
+print(lista_principal)
+
+# QUESTÃO 7
+matriz = []
+for i in range(n :=int(input("Digte n:"))):
+    matriz.append([i for _ in range(n)])
+print(matriz)
